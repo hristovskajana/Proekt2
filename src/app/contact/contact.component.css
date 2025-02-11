@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #d2b48c, #fdf5e6);
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactform {
+    padding: 50px;
+}
+
+.contactform h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inputbox {
+    position: relative;
+    width: 48%;
+}
+
+.inputbox2 {
+    width: 100%;
+}
+
+.inputbox input,
+.inputbox textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.inputbox input:focus,
+.inputbox textarea:focus {
+    border-bottom: 2px solid #d2b48c;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 16px;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.inputbox input:focus ~ span,
+.inputbox input:not(:placeholder-shown) ~ span,
+.inputbox textarea:focus ~ span,
+.inputbox textarea:not(:placeholder-shown) ~ span {
+    top: -20px;
+    left: 0;
+    color: #d2b48c;
+    font-size: 12px;
+}
+
+.inputbox2 textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: #fdf5e6;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.inputbox2 input[type="submit"] {
+    width: 150px;
+    background: #8b4513;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.inputbox2 input[type="submit"]:hover {
+    background: #006400;
+}
+
+@media (max-width: 768px) {
+    .formbox {
+        flex-direction: column;
+    }
+
+    .inputbox {
+        width: 100%;
+    }
+}
