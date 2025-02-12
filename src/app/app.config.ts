@@ -6,6 +6,6 @@ import { LoginComponent } from './login/login.component';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    LoginComponent // Ensure this is here
+    LoginComponent 
   ]
 };

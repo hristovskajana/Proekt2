@@ -141,7 +141,6 @@
 
 <div class="comment-section">
     <div class="comments" id="comments">
-      <!-- Dynamic comments will be inserted here -->
       <div *ngFor="let comment of comments">{{ comment }}</div>
     </div>
     <form class="form" id="comment-form" (ngSubmit)="submitComment()">

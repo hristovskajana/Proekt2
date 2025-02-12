@@ -7,7 +7,7 @@ describe('LoginComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LoginComponent] // Декларирање на компонентата наместо imports
+      declarations: [LoginComponent] 
     })
     .compileComponents();
     

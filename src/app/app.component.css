@@ -72,7 +72,7 @@ nav img {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Ensures everything is centered */
+    align-items: center; 
 }
 
 .footer-content {
@@ -81,7 +81,7 @@ nav img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%; /* Ensures the footer content spans the full width */
+    width: 100%; 
 }
 
 .contact-info, .social-icons {
@@ -90,13 +90,13 @@ nav img {
 }
 
 .contact-info {
-    order: 2; /* Moves the contact info to the bottom */
+    order: 2; 
 }
 
 .social-icons {
     display: flex;
     justify-content: space-around;
-    order: 1; /* Keeps the social icons at the top */
+    order: 1; 
 }
 
 .icon img {
